@@ -84,28 +84,28 @@
 
 .sc-player .sc-controls a {
   color: transparent;
-  background: url('/images/player/play-main.png');
+  background: url('../images/player/play-main.png');
 	width: 100px;
 	background-size: 33px;
 	background-repeat: no-repeat;
 }
 
 .sc-player .sc-controls a:hover {
-  background: url('/images/player/play-hover.png');
+  background: url('../images/player/play-hover.png');
 	width: 100px;
 	background-size: 33px;
 	background-repeat: no-repeat;
 }
 
 .sc-player.playing .sc-controls a.sc-pause{
-  background: url('/images/player/pause-main.png');
+  background: url('../images/player/pause-main.png');
 	width: 100px;
 	background-size: 33px;
 	background-repeat: no-repeat;
 }
 
 .sc-player.playing .sc-controls a.sc-pause:hover{
-  background: url('/images/player/pause-hover.png');
+  background: url('../images/player/pause-hover.png');
 	width: 100px;
 	background-size: 33px;
 	background-repeat: no-repeat;
