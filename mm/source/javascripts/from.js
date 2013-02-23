@@ -30,4 +30,3 @@ $(window).scroll(function() {
   // console.log(move)
   $thing.css( '-webkit-transform',  'translate(' + move +  'px,100px)'  );
 })
-;

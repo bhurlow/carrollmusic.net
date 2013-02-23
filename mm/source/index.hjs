@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>– C A R R O L L –</title>
+	<link rel="stylesheet" href="/style/fonts.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="/style/style.css" type="text/css" media="screen" title="no title" charset="utf-8">	
+	<script src="/components/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/vendor/stellar.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="/style/sc-player-custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script src="/js/soundcloud.player.api.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/js/sc-player.js" type="text/javascript" charset="utf-8"></script>
+</head>	
+<body id="index" onload="">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+	
+	<div id='player_box'>
+		<img id='carroll_text' src="img/text/CARROLL.png" alt="CARROLL">
+		<a href="https://soundcloud.com/carrollmusic-1/sticks" class="sc-player"></a>
+		<div class="fb-like" data-href="http://www.facebook.com/carrollmusic1" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false"></div>		
+	  
+	  <div class='social'>
+	    <a class='whitebox boxsize4' href='https://www.facebook.com/carrollmusic1' target='_blank'>Facebook</a>
+	    <a class='whitebox boxsize4' href="https://twitter.com/CarrollMPLS" target='_blank'>Twitter</a>
+	    <a class='whitebox boxsize4' href="https://soundcloud.com/carrollmusic-1" target='_blank'>Soundcloud</a>
+	    <a class='whitebox boxsize4' href='http://www.youtube.com/user/CarrollMusicMPLS' target='_blank'>Youtube</a>
+	  </div>
+	  
+	  <div class='nav'>
+	    <a class='whitebox boxsize2' href="/pastshows"> past shows </a>
+  	  <a class='whitebox boxsize2' href="/bands"> bands we've played with </a>
+	  </div>
+
+	</div>
+	
+	<div class='track'>
+  	<section class='shows panel'>
+  	  <h1> Upcoming Shows </h1>
+  	  <table>
+        <tbody>
+          <tr>
+            <td>When: </td>
+            <td>Where: </td>
+            <td>With: </td>
+          </tr>		       
+          {{#shows}}
+          <tr>
+            <td> {{when}} </td>
+            <td> @ {{where}} </td>
+            <td> 
+                {{#with}} 
+                  <a href='http://{{link}}' target="_blank">{{band}}</a>
+                {{/with}}
+             </td>
+  			  </tr>
+  				{{/shows}}
+    			
+          </tbody>
+      	</table> 
+  	</section>
+	
+  	<section class='press panel'>
+  	 <h1> Press </h1>
+  	 {{#press}} 
+  	 <div class='press_item'>
+  	   <p class='press_words'> "{{words}}"</p>
+  	   <span class='press_who'> - {{who}}</span>
+  	 </div>
+  	 {{/press}}
+  	</section>
+  	
+  	<section class='contact panel'>
+  	  <h1> you can contact us at: </h1>
+  	  <a href='mailto:booking@carrollmusic.net' target='_blank'>booking@carrollmusic.net</a>
+  	</section>
+  <!-- END TRACK SECTION -->
+	</div>
+	
+
+	
+  <div class='hand_wrapper'>
+	  <img class='plax1' data-stellar-ratio="-0.2"   src="/img/opt/hand-piece1.png" >
+    <img class='plax2' data-stellar-ratio="-0.3" src="/img/opt/hand-piece2.png" >
+    <img class='plax3' data-stellar-ratio="-0.4"   src="/img/opt/hand-piece3.png" >
+    <img class='plax4' data-stellar-ratio="-0.5"   src="/img/opt/hand-piece4.png" >
+	</div>
+	<script src="/js/hands2.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

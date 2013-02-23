@@ -5,7 +5,6 @@
 *   Licensed under the MIT license:
 *   http://www.opensource.org/licenses/mit-license.php
 */
-
 (function(){
   var isIE = (/msie/i).test(navigator.userAgent) && !(/opera/i).test(navigator.userAgent);
   

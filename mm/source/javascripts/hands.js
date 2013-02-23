@@ -88,4 +88,3 @@ function newPos(x, windowHeight, pos, adjuster, inertia){
 // hp1.pos += 10 // scroll distance divided by hand distance travel (this should be an equation)
 
 */
-;
