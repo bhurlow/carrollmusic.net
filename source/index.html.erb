@@ -15,6 +15,7 @@
     </div>
   </div>
 	<div class='track'>
+    
   	<section class='shows panel'>
   	  <h1> Upcoming Shows </h1>
   	  <table>
@@ -23,33 +24,33 @@
             <td>When: </td>
             <td>Where: </td>
             <td>With: </td>
-          </tr>		       
+          </tr>	
+
+          <% data.shows.upcoming.each do |f| %>
+            <tr>
+              <td><%= f.when %></td>
+              <td><%= f.where %></td>
+              <td><%= f.with %></td>
+            </tr>
+          <% end %>	    
           
-  	     <tr>
-          <td> 02/20 </td> 
-          <td> The Empty Bottle, Chicago </td>
-          <td>
-            <a target='_blank' href="http://www.howlerband.com/">Jordan Gatesmith,</a>
-            <a target='_blank' href="http://www.strangenamesmusic.com/">Strange Names,</a>
-            <a target='_blank' href="http://pitchfork.com/reviews/albums/17558-torres/">Torres</a>
-          </td>
-         </tr>
-          <tr>
-            <td> 02/21 </td> 
-            <td> The Cedar Cultural Center </td>
-            <td>
-              <a target='_blank' href="http://badbadhats.com/">Bad Bad Hats</a>
-            </td>
-         </tr>
           </tbody>
       	</table> 
   	</section>
 	<section class='press panel'>
 	 <h1> Press </h1>
-	 <div class='press_item'>
-	   <p class='press_words'> "Lead Balloon” is really good. It’s nothing revolutionary, but in a time when music seems to be getting weirder just for the sake of being weird (and getting accolades even if it doesn’t sound all that great), Carroll is fresh, young, impeccably constructed and a good instance of the dream pop enveloping the Twin Cities right now. Sometimes all you need is a tight ensemble and the know-how in making a lasting melody and you’re set. Carroll have got it."</p>
-	   <span class='press_who'> - The Local Current</span>
-	 </div>
+    
+    <% data.press.words.each do |f| %>
+      <div class="press_item">
+        <p class="press_words">
+          <%= f.words %>
+        </p>
+        <span class="press_who">
+          <%= f.who %>
+        </span>
+      </div>
+    <% end %> 
+
 	</section>
 	<section class='contact panel'>
 	  <h1> you can contact us at: </h1>
