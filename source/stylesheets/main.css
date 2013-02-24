@@ -1,5 +1,5 @@
 body {
-  background-image: url("/images/background_opt.png");
+  background-image: url("../images/background_opt.png");
   height: 2500px;
   margin: 0;
 }
@@ -34,7 +34,7 @@ a {
   left: 6em;
   width: 32em;
   padding: 1em 0em 1em 0em;
-  background-image: url("/images/background_opt.png");
+  background-image: url("../images/background_opt.png");
   border-bottom: 3px solid white;
   border-top: 3px solid white;
 }
