@@ -11,6 +11,22 @@ a {
 }
 
 
+/* DL TEXT */
+.download {
+  font-size: 3em;
+  line-height: 1.6em;
+  margin-top: -4em;
+}
+
+.download h1 {
+  color: white;
+}
+
+.download a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #player_box {
   position: fixed;
   z-index: 3;
