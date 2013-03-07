@@ -13,7 +13,7 @@ a {
 
 /* DL TEXT */
 .download {
-  font-size: 3em;
+  font-size: 1em;
   line-height: 1.6em;
   margin-top: -4em;
 }
@@ -25,6 +25,18 @@ a {
 .download a {
   text-decoration: none;
   color: inherit;
+  font-family: 'Dagny_bold';
+  color: #363636;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+}
+
+.download a:hover {
+  background: rgb(243, 243, 243);;
+
 }
 
 #player_box {
