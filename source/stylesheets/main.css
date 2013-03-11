@@ -1,3 +1,6 @@
+
+
+
 body {
   background-image: url("../images/background_opt.png");
   height: 2500px;
@@ -275,4 +278,66 @@ h2 {
 .contact {
   font-family: 'Dagny_book';
 }
+
+
+
+
+/* EPK */
+
+body.epk {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.epk {
+  font-family: 'Dagny_book';
+}
+
+.epk img {
+  width: 100%;
+}
+
+.epk h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.epk ul {
+  list-style: none;
+  padding: 0;
+}
+
+.epk strong {
+  font-family: 'Dagny_bold';
+  line-height: 2em;
+}
+
+.epk p {
+  margin: 0;
+  line-height: 1.6em;
+}
+
+.epk .item {
+  background: white;
+}
+
+.epk .half {
+  width: 46%;
+  padding: 1%;
+  margin: 1%;
+  float: left;
+  height: 13em;
+  overflow: hidden;
+}
+
+.epk .full {
+  width: 100%;
+  float: left;
+}
+
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
 
