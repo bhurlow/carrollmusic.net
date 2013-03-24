@@ -349,6 +349,25 @@ body.epk {
   height: 800px;
 }
 
+/* PRESS */
+
+.press {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.press a {
+  color: white;
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -0.1em;
+}
+
+.press a:hover {
+  color: #90E1F5;;
+}
+
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
