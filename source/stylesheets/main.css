@@ -280,19 +280,39 @@ h2 {
   font-family: 'Dagny_book';
 }
 
-
-
-
 /* EPK */
 
-body.epk {
+.epk_info {
   max-width: 960px;
   margin: 0 auto;
   padding: 1em;
 }
 
 .epk {
+  height: auto;
+}
+
+.epk .img_bg {
+  position: absolute;
+  z-index: -1;
+  top: -300px;
+}
+
+.epk .wordmark {
+  position: absolute;
+  top: 200px;
+}
+
+.epk .epk_info {
+  margin-top: 1000px;
+}
+
+.epk {
   font-family: 'Dagny_book';
+}
+
+.epk h1 {
+  color: white;
 }
 
 .epk img {
