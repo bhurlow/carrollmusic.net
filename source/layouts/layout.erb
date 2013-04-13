@@ -10,7 +10,7 @@
     <title>CARROLL</title>
     <script src='http://code.jquery.com/jquery-1.8.0.min.js'></script>
 
-    <%= javascript_include_tag "soundcloud.player.api", "sc-player", "stellar" %>
+    <%= javascript_include_tag "soundcloud.player.api", "sc-player", "stellar", "cover" %>
     <%= stylesheet_link_tag "normalize", "main", "fonts", "sc-player-custom.css" %>
 
     <script>
@@ -28,7 +28,7 @@
     
   </head>
   
-  <body class="<%= page_classes %>">
+  <body>
     <%= yield %>
   </body>
 </html>

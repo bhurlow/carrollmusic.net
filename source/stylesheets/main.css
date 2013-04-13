@@ -7,6 +7,24 @@ body {
   margin: 0;
 }
 
+/* COVER IMAGE */
+
+.cover {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background: black;
+  height: 100%;
+}
+
+.cover img {
+  width: 100%;
+}
+
+.cover img:hover {
+  cursor: pointer;
+}
+
 /* GLOBALS */
 
 a {
@@ -257,24 +275,38 @@ h2 {
 
 /* PRESS */
 
-.press {
-  color: #363636;
+.presslinks {
+  max-width: 840px;
+  margin: 0 auto;
 }
 
-.press_item {
-  margin-bottom: 2em;
-  
-}
-  
-.press_words {
-  font-family: 'Dagny_book';
-  
-}
-
-.press_who {
+.presslinks a {
+  color: white;
   font-family: 'Dagny_heavy';
-
+  font-size: 5em;
+  text-transform: capitalize;
 }
+
+.presslinks a:hover {
+  color: #90E1F5;
+}
+/*.press {*/
+  /*color: #363636;*/
+/*}*/
+
+/*.press_item {*/
+  /*margin-bottom: 2em;*/
+/*}*/
+  
+/*.press_words {*/
+  /*font-family: 'Dagny_book';*/
+  /*color: red;*/
+  
+/*}*/
+
+/*.press_who {*/
+  /*font-family: 'Dagny_heavy';*/
+/*}*/
 
 .contact {
   font-family: 'Dagny_book';
@@ -301,6 +333,7 @@ h2 {
 .epk .wordmark {
   position: absolute;
   top: 200px;
+  width: 90%;
 }
 
 .epk .epk_info {
@@ -345,17 +378,51 @@ h2 {
 
 .epk .half {
   width: 46%;
+  min-height: 16em;
   padding: 1%;
   margin: 1%;
   float: left;
-  height: 13em;
-  overflow: hidden;
 }
 
 .epk .full {
   width: 100%;
   float: left;
 }
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+e
+fter {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
 
 /* VIDEOS */
 
@@ -371,22 +438,36 @@ h2 {
 
 /* PRESS */
 
-.press {
-  max-width: 1080px;
-  margin: 0 auto;
-}
+/*section.presspage {*/
+  /*max-width: 1080px;*/
+  /*margin: 0 auto;*/
+  /*color: red;*/
+  /*font-size: 5em;*/
+/*}*/
 
-.press a {
-  color: white;
-  font-size: 5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: -0.1em;
-}
+/*.presspage a {*/
+  /*color: red;*/
+/*}*/
 
-.press a:hover {
-  color: #90E1F5;;
-}
+/*.presspage a {*/
+  /*color: white;*/
+  /*font-size: 5em;*/
+  /*text-transform: uppercase;*/
+  /*font-weight: bold;*/
+  /*letter-spacing: -0.1em;*/
+/*}*/
+
+/*.presspage a:hover {*/
+  /*color: #90E1F5;;*/
+/*}*/
+
+/*.presslinks {*/
+  /*width: 200px;*/
+/*}*/
+
+/*.presslinks a {*/
+  /*color: red;*/
+/*}*/
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }

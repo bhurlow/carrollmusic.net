@@ -1,41 +1,59 @@
+---
+my_list:
+  - Minneapolis
+  - Madison
+  - Toronto
+  - Montreal
+  - Boston
+  - New York
+  - Philly
+  - Washington D.C.
+  - Pittsburg
+  - Chicago
+---
 
 
-<img class="wordmark" src="/images/text/CARROLL.png" />
+<div class='wordmark'>
+  <img class="wordmark" src="/images/text/CARROLL.png" />
+</div>
+
 <img class="img_bg" src="/images/band.jpg" alt="">
 
 <div class="epk_info">
 	<h1> CARROLL EPK </h1>
 	<div class="item half">
 		<p>
-		"Songs from the record are already in rotation at The Current on MPR, who called them "among the freshest tracks we've heard come from the Twin Cities in a while." No arguments here. Carroll's song structures are immaculate, but that doesn't hold back subtle and powerful emotional resonance they bring. The melancholy yet bright tracks use melodies like tides, inevitable and simple yet imminently mysterious."
+          "Keep your attention on Carroll because they have a formula that could easily earn them a spot as one of indie rocks top contenders" - indiemusicalbumreviews.com
 		</p>
-		<strong> - Minneapolis City Pages </strong>
-	</div>
+        <strong> - Minnesota Public Radio </strong><br/>
+        <a href='/press' target='_blank'> More Press </a>
 
+
+	</div>
 	<div class="item half">
 		<p>
-			"Needs is a perfectly crafted indie-pop gem. Lead singer Hurlow's light voice is wired to the dreamy five tracks on the EP, a deliberate mash-up of noise and art. It's the kind of thing the indie music blogosphere and world at large will eat up -- songs that recognize their own irony and shrug it off."
+		"Songs from the record are already in rotation at The Current on MPR, who called them "among the freshest tracks we've heard come from the Twin Cities in a while." No arguments here. Carroll's song structures are immaculate, but that doesn't hold back subtle and powerful emotional resonance they bring. The melancholy yet bright tracks use melodies like tides, inevitable and simple yet imminently mysterious."
 		</p>
-		<strong> - Minnesota Public Radio </strong>
+		<strong> - City Pages </strong>
 	</div>
+
 
 	<div class="item half">
 		<h3> Contact </h3>
 		<ul>
 			<li><a href="mailto:booking@carrollmusic.net" target="_blank">booking@carrollmusic.net</a></li>
+			<li><a href="http://carroll.bandcamp.com/" target="_blank">bandcamp</a></li>
 		</ul>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F74951242"></iframe>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F63942469"></iframe>
 	</div>
 
 	<div class="item half">
 		<h3> Spring Tour Dates </h3>
 		<ul>
-			<li> Madison  </li>
-			<li> Chicago  </li>
-			<li> Detroit </li>
-			<li> Montreal </li>
-			<li> New York </li>
-			<li> New York </li>
-			<li> Philedelphia </li>
+            <% current_page.data.my_list.each do |f| %>
+            <li><%= f %></li>
+            <% end %>
 		</ul>
 	</div>
 </div>
