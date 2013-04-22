@@ -55,6 +55,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+# page "/videos/*", :layout => "layout"
+
 activate :directory_indexes
 
 # Build-specific configuration

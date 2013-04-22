@@ -1,6 +1,4 @@
 
-
-
 body {
   background-image: url("../images/background_opt.png");
   height: 2500px;
@@ -389,6 +387,21 @@ h2 {
   float: left;
 }
 
+
+/* VIDEOS */
+
+.video-section {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.video-section .video iframe {
+  width: 100%;
+  height: 40em;
+}
+
+
+
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
@@ -424,17 +437,19 @@ fter {
 }
 
 
-/* VIDEOS */
 
-.videos {
+
+/*.videos {
+  border: 1px solid blue;
   max-width: 1080px;
   margin: 0 auto;
+  color: green;
 }
 
 .video iframe {
   width: 100%;
   height: 800px;
-}
+}*/
 
 /* PRESS */
 
