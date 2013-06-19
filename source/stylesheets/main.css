@@ -13,6 +13,7 @@ body {
   z-index: 1000;
   background: black;
   height: 100%;
+  display: none;
 }
 
 .cover img {
