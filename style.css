@@ -1,0 +1,76 @@
+
+@font-face {
+  font-family: frog;
+  src: url(/font/frog_book.ttf)
+}
+
+@font-face {
+  font-family: frog;
+  src: url(/font/frog_bold_obl.ttf)
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: frog;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+
+header {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  font-size: 8px;
+  padding: 4em;
+}
+
+@media screen and (min-width: 1220px) {
+  header {
+    height: 100vh;
+    padding: 1rem 6rem;
+    overflow: hidden;
+    font-size: 16px;
+  }
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+	font-size: 10em;
+  line-height: 1em;
+  margin-top: 0;
+  /*line-height: 0.25em;*/
+}
+
+h2 {
+  font-size: 8em;
+  line-height: 1em;
+  margin: 0;
+  /*line-height: 0.25em;*/
+}
+
+ul {
+	list-style: none;
+  padding: 0;
+}
+
+
+
+
+
+

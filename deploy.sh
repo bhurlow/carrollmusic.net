@@ -1,3 +1,3 @@
-rsync -vr ./build/* root@foam.superflyer.in:/root/websites/carrollmusic.net --exclude-from exclude.txt
+rsync -vr ./build/* kelp:/root/web/carrollmusic.net --exclude-from exclude.txt
 
 
