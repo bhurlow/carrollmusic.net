@@ -40,7 +40,7 @@ header {
 
   header {
     height: 100vh;
-    padding: 1rem 6rem;
+    padding: 4rem 16rem;
     overflow: hidden;
     font-size: 16px;
   }
@@ -48,6 +48,12 @@ header {
   .container {
     width: 800px;
     margin: 0 auto;
+  }
+
+  .bio {
+    clear: both;
+    padding: 2rem;
+    line-height: 1.75em;
   }
 
 }
