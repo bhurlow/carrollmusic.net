@@ -1,4 +1,6 @@
 
+console.log('hi')
+
 /*
  * daytah
  */
