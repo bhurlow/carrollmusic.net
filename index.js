@@ -5,9 +5,9 @@ console.log('hi')
  * daytah
  */
 
+var fs = require('fs')
 var level = require('level')
 var db = level('/data/carroll')
-
 
 /*
  * sec
@@ -36,6 +36,10 @@ var basicAuth = require('basic-auth-connect')
 app.use(static(__dirname + '/public'))
 app.use(body())
 
+app.get('/onesheet', function(req, res) {
+  res.redirect('/onesheet.pdf')
+})
+
 app.post('/signup', function(req, res) {
   var email = req.body.email
   db.put(Date.now(), email, function(err) {
@@ -55,7 +59,6 @@ app.get('/emails', basicAuth(test), function(req, res) {
     .pipe(es.stringify())
     .pipe(res)
 })
-
 
 app.listen(process.env.PORT || 3000)
 
