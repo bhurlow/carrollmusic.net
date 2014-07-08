@@ -31,10 +31,12 @@ var app = express()
 
 var static = require('serve-static')
 var body = require('body-parser')
+var logger = require('morgan')
 var basicAuth = require('basic-auth-connect')
 
 app.use(static(__dirname + '/public'))
 app.use(body())
+app.use(logger('dev'))
 
 app.get('/onesheet', function(req, res) {
   res.redirect('/onesheet.pdf')

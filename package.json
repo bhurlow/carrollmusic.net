@@ -2,7 +2,7 @@
   "name": "carrollmusic.net",
   "version": "0.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +23,7 @@
     "body-parser": "^1.2.0",
     "basic-auth-connect": "^1.0.0",
     "basic-auth": "0.0.1",
-    "event-stream": "^3.1.5"
+    "event-stream": "^3.1.5",
+    "morgan": "^1.1.1"
   }
 }
