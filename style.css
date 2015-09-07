@@ -1,4 +1,8 @@
 
+* {
+  box-sizing: border-box; 
+}
+
 body {
   min-height: 6000px;
   margin-top: 150px;
@@ -12,19 +16,58 @@ body {
   src: url(/font/frog_book.ttf)
 }
 
+/* GENERIC */
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  /* background: yellow; */
+  height: 8rem;
+  overflow: hidden;
+}
+
+nav {
+  width: 10rem;
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  /* background: pink; */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  width: 1rem;
+  height: 100%;
+  height: 8rem;
+  text-align: center;
+  line-height: 8rem;
+  /* border: 3px solid red; */
+  font-weight: 800;
+  font-size: 1.2rem;
+}
 
 #slider {
   /* -webkit-transition: all 0.25s ease-in; */
   -webkit-transition: all 0.75s linear;
   width: 100%;
   height: 400px;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
+  position: relative;
   overflow: hidden;
   background: url(/img/bg.jpg);
   width: 374px;
   height: 150px;
   background-size: cover;
+  float: left;
 }
 
 #slider #badge {
@@ -36,3 +79,24 @@ body {
   width: 25%;
   float: left;
 }
+
+.bio {
+  font-size: 0.9rem;
+  max-width: 50%;
+  float: left;
+}
+
+#social {
+  width: 10rem;
+  float: left;
+}
+
+#social li {
+  float: left;
+}
+
+#social img {
+  width: 18px;
+  height: 18px;
+}
+
