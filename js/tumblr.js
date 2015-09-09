@@ -3,7 +3,7 @@ var url = "http://api.tumblr.com/v2/blog/blog.tumblr.com/info?api_key=your-api-k
 var blogname = 'carrollmusic.tumblr.com'
 
 var key = 'EGlOoHUyk05SSL1j94oSsMY9UeWHEoYAXErGW6siedUxDlCxlu'
-var url = 'http://api.tumblr.com/v2/blog/' + blogname + '/posts?api_key=' + key + '&?limit=8'
+var url = 'http://api.tumblr.com/v2/blog/' + blogname + '/posts?api_key=' + key + '&limit=30'
 
 $.ajax({
   url: url,
@@ -15,22 +15,26 @@ $.ajax({
 });
 
 function appendImages(imgs) {
-  imgs.forEach(function(src) {
+  images = imgs
+  console.log(imgs.length)
+  var rem = imgs.length % 4
+  var toShow = imgs.splice(rem)
+  toShow.forEach(function(src) {
+    var clipper = $('<div>')
+    clipper.addClass('clipper')
     var img = $('<img>')
     img.attr('src', src)
-    $('#tumblr_images').append(img)
+    clipper.append(img)
+    $('#tumblr_images').append(clipper)
   })
 
 }
 
 function parseTumblrRes(data) {
   var images = []
-  console.log(data.response.posts.length)
   data.response.posts.forEach(function(post) {
-    console.log(post)
-    // images.push(post.thumbnail_url)
     if (post.photos) {
-      var src = post.photos[0].alt_sizes[3].url
+      var src = post.photos[0].alt_sizes[1].url
       images.push(src)
     }
   })

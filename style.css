@@ -22,50 +22,30 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightblue;
+}
+
 header {
   width: 100%;
-  /* background: yellow; */
   height: 8rem;
   overflow: hidden;
-}
-
-nav {
-  width: 10rem;
-  float: left;
-}
-
-nav ul {
-  list-style: none;
-  /* background: pink; */
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  float: left;
-  width: 1rem;
-  height: 100%;
-  height: 8rem;
-  text-align: center;
-  line-height: 8rem;
-  /* border: 3px solid red; */
-  font-weight: 800;
-  font-size: 1.2rem;
 }
 
 #slider {
   /* -webkit-transition: all 0.25s ease-in; */
-  -webkit-transition: all 0.75s linear;
-  width: 100%;
-  height: 400px;
-  /* position: fixed; */
-  /* top: 0; */
+  -webkit-transition: background-position-y 2s linear;
   position: relative;
   overflow: hidden;
   background: url(/img/bg.jpg);
-  width: 374px;
-  height: 150px;
+  height: 8rem;
+  width: 33.33333%;
   background-size: cover;
   float: left;
 }
@@ -75,28 +55,80 @@ nav li {
   width: 100%;
 }
 
-#tumblr_images img {
-  width: 25%;
+nav {
+  width: 33.33333333%;
   float: left;
+  text-align: center;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 80%;
+}
+
+nav li {
+  float: left;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  line-height: 8rem;
+
+  font-weight: 800;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+
+#social {
+  width: 33.333333%;
+  float: left;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#social ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 80%;
+}
+
+#social li {
+  float: left;
+  height: 100%;
+  line-height: 8rem;
+  width: 20%;
+}
+
+#social img {
+  width: 18px;
+  height: 18px;
+}
+
+
+#tumblr_images .clipper {
+  width: 250px;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+}
+
+#tumblr_images .clipper img {
+  /* width: 100%; */
+  height: 100%;
 }
 
 .bio {
   font-size: 0.9rem;
   max-width: 50%;
   float: left;
-}
-
-#social {
-  width: 10rem;
-  float: left;
-}
-
-#social li {
-  float: left;
-}
-
-#social img {
-  width: 18px;
-  height: 18px;
 }
 

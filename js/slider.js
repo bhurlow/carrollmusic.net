@@ -13,7 +13,7 @@ function slider() {
     posY += 50
     $('#slider').css('background-position-y', '-' + posY + 'px') 
     // $('#slider').css('background-position-x', '-' + posY + 'px') 
-  }, 750)
+  }, 2000)
 
 }
 
