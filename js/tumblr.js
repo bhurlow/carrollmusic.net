@@ -18,7 +18,7 @@ function appendImages(imgs) {
   images = imgs
   console.log(imgs.length)
   var rem = imgs.length % 4
-  var toShow = imgs.splice(rem)
+  var toShow = imgs.slice(0, imgs.length - rem)
   toShow.forEach(function(src) {
     var clipper = $('<div>')
     clipper.addClass('clipper')
