@@ -1,0 +1,238 @@
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'frog';
+  font-size: 18px;
+  padding: 1rem;
+  // background: red;
+}
+
+@media (min-width: 50rem) {
+  body {
+    font-size: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 6000px;
+    margin-top: 4rem;
+  }
+}
+
+@font-face {
+  font-family: frog;
+  src: url(/font/frog_book.ttf)
+}
+
+/* GENERIC */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightblue;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 50rem) {
+  header {
+    width: 100%;
+    height: 8rem;
+    /* height: 8rem; */
+    overflow: hidden;
+  }
+}
+
+#banner {
+  /* -webkit-transition: all 0.25s ease-in; */
+  -webkit-transition: background-position-y 2s linear;
+  overflow: hidden;
+  background: url(/img/bg.jpg);
+  background-size: cover;
+  width: 100%;
+  font-size: 0;
+}
+
+#banner img {
+  width: 100%;
+}
+
+/* #banner img { */
+/*   width: 100%; */
+/* } */
+
+/* #banner #badge { */
+/*   width: 100%; */
+/* } */
+
+
+@media (min-width: 50rem) {
+  #banner {
+    height: 8rem;
+    width: 33.33333%;
+    float: left;
+    position: relative;
+  }
+
+  #banner #badge {
+    position: absolute;
+  }
+
+}
+
+nav {
+  /* background: red; */
+  width: 50%;
+  float: left;
+}
+
+nav li {
+  /* padding: 0.5rem; */
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+
+  /* text-align: center; */
+  /* padding: 1.25rem; */
+  /* font-size: 1.2rem; */
+}
+
+@media (min-width: 50rem) {
+
+  nav {
+    // width: 33.33333333%;
+    float: left;
+    text-align: center;
+    position: relative;
+  }
+
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    /* background: cyan; */
+  }
+
+  nav li {
+    float: right;
+    // width: 5rem;
+    height: 100%;
+    text-align: center;
+    line-height: 8rem;
+    font-weight: 800;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    
+    padding-left: $spacing-unit;
+  }
+
+}
+
+#social {
+  width: 50%;
+  overflow: hidden;
+}
+
+#social li {
+  width: 50%;
+  text-align: center;
+  float: left;
+  padding: 0.5rem;
+}
+
+#social li img {
+  width: 25px;
+}
+
+@media (min-width: 50rem) {
+
+  #social {
+    width: 33.333333%;
+    height: 8rem;
+    float: left;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  #social ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 80%;
+  }
+
+  #social li {
+    float: left;
+    height: 100%;
+    line-height: 8rem;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #social li img {
+    width: 18px;
+    height: 18px;
+  }
+
+}
+
+#tumblr_images {
+  display: none;
+  font-size: 0;
+}
+
+#tumblr_images .clipper {
+  width: 25%;
+  height: 5.25rem;
+  overflow: hidden;
+  float: left;
+}
+
+#tumblr_images .clipper img {
+  width: 100%;
+}
+
+
+@media (min-width: 50rem) {
+
+  #tumblr_images .clipper {
+    width: 250px;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+  }
+
+}
+
+.bio {
+  /* font-size: 0.9rem; */
+  /* max-width: 50%; */
+  /* float: left; */
+}
+

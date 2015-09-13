@@ -1,0 +1,18 @@
+
+
+  <!-- <ul> -->
+  <!--   <li> <a href="/shows">shows</a> -->
+  <!--   <li> <a href="/about">about</a> -->
+  <!--   <li><a href="/sounds">sounds</a></li> -->
+  <!--   <li><a href="/videos">videos</a></li> -->
+  <!--   <li><a href="/contact">contact</a></li> -->
+  <!--   <li><a href="/press">press</a></li> -->
+  <!-- </ul> -->
+
+<ul>
+  {% for page in site.pages %}
+  {% if page.title %}
+  <li><a class="" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>

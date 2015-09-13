@@ -4,8 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+![/img/bio.jpg](/img/pool.jpg)
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Minneapolis-based Carroll, one of the most colorful, carefully honed acts in indie rock, are many things: young, vibrant, contemplative. But perhaps most interestingly, they’re a case study in how four distinct creative voices can coalesce into one balanced, relentlessly engaging sound.
+The mechanics were simple enough: Near the end of 2011, Brian Hurlow’s demos (think melancholic, synth-based pop) caught the ear of his college classmate, Charlie Rudoy. The latter was a drummer who could bring to the songs a live, artful element. The pair quickly moved in together on St. Paul’s Carroll Avenue, tucked neatly in between Summit Hill and the Mississippi River. After some experimenting and tip-toeing through early gigs, Hurlow and Rudoy brought on board two more musicians to flesh out the live show. Max Kulicke and Charles McClung, talented artists in their own right, slid seamlessly into the line-up on guitar and bass, respectively. From there, Carroll—two Rs, two Ls, and now two Charlies—was set in motion.
+An EP, Needs, was followed in quick succession by a host of accolades.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Though their buzz was reaching a fever pitch, Carroll escaped to a cabin in the remote Northern wilderness. There, they recorded a handful of demos that ended up—by chance, by fate—on the desk of the renowned producer Jon Low (The War on Drugs, The National). Low summoned the band to Philadelphia, where they cut and mixed their self-titled debut LP in 18 marathon days. The sound could be best described as closing your eyes and submerging yourself into a bathtub of your ideal warmth–only to open your eyes and discover you’re bathing in a hazardous green liquid. Even knowing this, you can’t deny that you feel warm and coddled.
+Despite the pace at which it was made, Carroll (due out September 18 on Entertainment One Music) is thoughtful, pointed, dense, fun, hypnotic. As for that coalescence, the band refuses to get in its own way. Carroll’s exercise in writing perfectly fucked up pop gems yielded an LP that sounds like a pop approach to writing heady, woozy, psychedelic rock. With singles (“Bad Water,” “Alligator”) already dominating radio markets, Carroll should soon test its thesis from a much wider platform. Having opened for such disparate acts as Le1f and Dr. Dog, the four components to a singular vision are sure to find a home on dials and stages near you very soon.
