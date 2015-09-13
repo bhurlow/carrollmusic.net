@@ -104,6 +104,11 @@
     margin-left: 0;
 }
 
+.social-media-list .icon {
+  opacity: 0.5;
+  margin-right: $spacing-unit / 6;
+}
+
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
