@@ -32,6 +32,9 @@ body {
       fill: $grey-color-dark;
     }
   }
+  @include mq($on-palm) {
+    display: none;
+  }
 }
 
   // .trigger {
@@ -58,7 +61,8 @@ header {
     img {
       width: 100%;
     }
-    @include media-query($on-palm) {
+
+    @include mq($on-palm) {
       height: 12vw;
       width: 33.33333%;
       float: left;
@@ -67,6 +71,7 @@ header {
         position: absolute;
       }
     }
+
   }
 
   .trigger {
@@ -85,6 +90,27 @@ header {
     width: 100%;
     height: 8rem;
     overflow: hidden;
+
+    .trigger {
+      display: block;
+      width: 66.66666666%;
+      float: left;
+      padding: 0;
+      li {
+        float: right;
+        height: 100%;
+        text-align: center;
+        line-height: 8rem;
+        font-weight: 800;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+        padding: 0;
+        padding-left: $spacing-unit;
+      }
+    }
+
   }
 
 }
