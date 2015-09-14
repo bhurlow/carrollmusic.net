@@ -4,7 +4,8 @@ title: Shows
 permalink: /shows/
 ---
 
-<div id="shows"> 
-- this
-- that
-</div>
+#### upcoming shows
+
+- Friday sept. 18 @ Triple Rock w/ Night Moves + Strange Relations
+
+

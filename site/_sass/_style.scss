@@ -47,6 +47,25 @@ body {
   //   padding-bottom: 5px;
   // }
 
+.clickable {
+  background-color: $brand-color;
+  display: inline-block;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  background: url(/img/bg.jpg);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.clickable:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+}
+
 header {
 
   overflow: hidden;
@@ -58,6 +77,7 @@ header {
     background-size: cover;
     width: 25%;
     font-size: 0;
+    float: left;
     img {
       width: 100%;
     }
@@ -67,6 +87,7 @@ header {
       width: 33.33333%;
       float: left;
       position: relative;
+      margin-left: -2vw;
       #badge {
         position: absolute;
       }
@@ -80,6 +101,16 @@ header {
     padding-left: $spacing-unit / 2;
     padding-top: $spacing-unit / 2;
     display: none;
+
+    li {
+      height: 100%;
+      font-weight: 800;
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   &:hover .trigger {
@@ -98,16 +129,9 @@ header {
       padding: 0;
       li {
         float: right;
-        height: 100%;
         text-align: center;
-        line-height: 8rem;
-        font-weight: 800;
-        font-size: 0.6rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin: 0;
-        padding: 0;
         padding-left: $spacing-unit;
+        line-height: 8rem;
       }
     }
 
@@ -195,7 +219,7 @@ header {
   #social li {
     float: left;
     height: 100%;
-    line-height: 8rem;
+    line-height: 7rem;
     width: 20%;
     padding: 0;
     margin: 0;
@@ -251,7 +275,6 @@ header {
 }
 
 footer {
-  // background: purple;
   border-top: 1px solid $grey-color-light;
   padding-top: $spacing-unit / 2;
   margin-top: $spacing-unit / 2;
@@ -260,8 +283,8 @@ footer {
 }
 
 .footer-heading {
-  font-size: 18px;
-  color: $grey-color-dark;
+  // font-size: 18px;
+  color: $grey-color;
   margin-bottom: $spacing-unit / 2;
 }
 
@@ -282,3 +305,44 @@ footer {
   box-sizing: border-box;
   width: 100%;
 }
+
+.footer-col p {
+  font-size: 0.8rem;
+}
+
+@include mq($on-palm) {
+  .footer-col {
+    // background: black;
+  }
+  .footer-col-1 {
+    width: 30%;
+  }
+  .footer-col-2 {
+    width: 30%;
+  }
+  .footer-col-3 {
+    width: 40%;
+    text-align: right;
+  }
+}
+
+.post {
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+
+  li {
+    font-weight: 800;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  h4 {
+    color: $grey-color;
+    margin-bottom: $spacing-unit * 2;
+  }
+
+}
+
+
+
