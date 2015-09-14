@@ -4,21 +4,23 @@
 }
 
 body {
-  font-family: 'frog';
-  font-size: 18px;
-  padding: 1rem;
-  // background: red;
-}
 
-@media (min-width: 50rem) {
-  body {
-    font-size: 16px;
-    max-width: 1000px;
-    margin: 0 auto;
-    min-height: 6000px;
-    margin-top: 4rem;
+  font-size: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 6000px;
+  margin-top: 4rem;
+
+  @include media-query($on-palm) {
+    width: 100%;
+    font-family: 'frog';
+    font-size: 18px;
+    padding: 1rem;
   }
 }
+
+// @include media-query($on-palm) {
+// }
 
 @font-face {
   font-family: frog;
@@ -50,13 +52,9 @@ img {
 header {
   overflow: hidden;
   margin-bottom: 3rem;
-}
-
-@media (min-width: 50rem) {
-  header {
+  @include mq($on-palm) {
     width: 100%;
     height: 8rem;
-    /* height: 8rem; */
     overflow: hidden;
   }
 }
@@ -67,36 +65,50 @@ header {
   overflow: hidden;
   background: url(/img/bg.jpg);
   background-size: cover;
-  width: 100%;
+  width: 25%;
   font-size: 0;
-}
+  border-bottom: 3px solid red;
 
-#banner img {
-  width: 100%;
-}
+  img {
+    width: 100%;
+  }
 
-/* #banner img { */
-/*   width: 100%; */
-/* } */
+  @include media-query($on-palm) {
 
-/* #banner #badge { */
-/*   width: 100%; */
-/* } */
-
-
-@media (min-width: 50rem) {
-  #banner {
-    height: 8rem;
+    height: 12vw;
     width: 33.33333%;
     float: left;
     position: relative;
-  }
+    border: 3px solid cyan;
 
-  #banner #badge {
-    position: absolute;
-  }
+    #badge {
+      position: absolute;
+    }
 
+  }
 }
+
+// #banner img {
+//   width: 100%;
+// }
+
+// @media (min-width: 50rem) {
+
+//   #banner {
+//     height: 12vw;
+//     width: 33.33333%;
+//     float: left;
+//     position: relative;
+//   }
+
+//   #banner #badge {
+//     position: absolute;
+//   }
+
+// }
+
+
+
 
 nav {
   /* background: red; */
@@ -203,8 +215,10 @@ nav li {
 }
 
 #tumblr_images {
-  display: none;
+  // display: none;
   font-size: 0;
+  overflow: hidden;
+  padding-bottom: $spacing-unit;
 }
 
 #tumblr_images .clipper {
@@ -222,8 +236,8 @@ nav li {
 @media (min-width: 50rem) {
 
   #tumblr_images .clipper {
-    width: 250px;
-    height: 250px;
+    width: 25%;
+    height: 15rem;
     float: left;
     overflow: hidden;
   }
@@ -234,5 +248,11 @@ nav li {
   /* font-size: 0.9rem; */
   /* max-width: 50%; */
   /* float: left; */
+}
+
+.youtube {
+  width: 50%;
+  height: 10vw;
+  height: 44vh;
 }
 

@@ -21,6 +21,8 @@
 }
 
 .site-nav {
+
+  background: green;
   float: right;
   line-height: 56px;
 
@@ -39,10 +41,12 @@
   }
 
   @include media-query($on-palm) {
+
     position: absolute;
     top: 9px;
     right: 30px;
     background-color: $background-color;
+    background: red;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
@@ -67,14 +71,18 @@
       }
 
       .trigger {
-        clear: both;
-        display: none;
+
       }
 
-      &:hover .trigger {
-        display: block;
-        padding-bottom: 5px;
-      }
+//       .trigger {
+//         clear: both;
+//         display: none;
+//       }
+
+//       &:hover .trigger {
+//         display: block;
+//         padding-bottom: 5px;
+//       }
 
       .page-link {
         display: block;
