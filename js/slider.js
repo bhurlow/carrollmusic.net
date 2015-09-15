@@ -1,6 +1,8 @@
 
 $(slider)
 
+var posY = 0;
+
 function slider() {
 
   // animate w/ scroll
@@ -8,11 +10,12 @@ function slider() {
   //   $('#slider').css('background-position-y', '-' + window.scrollY + 'px') 
   // })
 
-//   var posY = 0;
-//   setInterval(function() {
-//     posY += 50
-//     $('#banner').css('background-position-y', '-' + posY + 'px') 
-//   }, 2000)
+  slide()
+  setInterval(slide, 2000)
 
 }
 
+function slide() {
+  posY += 50
+  $('#banner').css('background-position-y', '-' + posY + 'px') 
+}

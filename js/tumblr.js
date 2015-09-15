@@ -2,8 +2,9 @@
 var url = "http://api.tumblr.com/v2/blog/blog.tumblr.com/info?api_key=your-api-key"
 var blogname = 'carrollmusic.tumblr.com'
 
+var limit = 12
 var key = 'EGlOoHUyk05SSL1j94oSsMY9UeWHEoYAXErGW6siedUxDlCxlu'
-var url = 'http://api.tumblr.com/v2/blog/' + blogname + '/posts?api_key=' + key + '&limit=30'
+var url = 'http://api.tumblr.com/v2/blog/' + blogname + '/posts?api_key=' + key + '&limit=' + limit
 
 $.ajax({
   url: url,

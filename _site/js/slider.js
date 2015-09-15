@@ -19,4 +19,3 @@ function slide() {
   posY += 50
   $('#banner').css('background-position-y', '-' + posY + 'px') 
 }
-
