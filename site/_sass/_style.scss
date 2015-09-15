@@ -63,7 +63,7 @@ body {
 .clickable:hover {
   text-decoration: none;
   color: white;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 header {
@@ -250,16 +250,13 @@ header {
   width: 100%;
 }
 
-
-@media (min-width: 50rem) {
-
+@include mq($on-palm) {
   #tumblr_images .clipper {
     width: 25%;
     height: 15rem;
     float: left;
     overflow: hidden;
   }
-
 }
 
 .bio {
