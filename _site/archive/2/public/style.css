@@ -1,0 +1,165 @@
+
+@font-face {
+  font-family: frog;
+  src: url(/font/frog_book.ttf)
+}
+
+@font-face {
+  font-family: frog-bold;
+  src: url(/font/frog_bold_obl.ttf)
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: frog;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+
+header {
+  background-image: url('/img/bg.jpg');
+  background-size: cover;
+  font-size: 8px;
+  padding: 4em;
+}
+
+.c1, .c2 {
+  padding: 1em;
+}
+
+.bio {
+  clear: both;
+  padding: 1em;
+  line-height: 1.75em;
+}
+
+
+@media screen and (min-width: 1220px) {
+
+  header {
+    height: 100vh;
+    padding: 4rem 16rem;
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 3em;
+    overflow: hidden;
+  }
+
+  .bio {
+    background: black;
+
+  }
+
+  .c1, .c2 {
+    width: 50%;
+    float: left;
+  }
+
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+}
+
+a {
+  color: white;
+}
+
+h1, h2, h3 {
+  font-family: frog-bold;
+}
+
+h1 {
+	font-size: 10em;
+  line-height: 1em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 8em;
+  line-height: 1em;
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+ul {
+	list-style: none;
+  padding: 0;
+  font-weight: 100;
+}
+
+
+footer {
+  width: 100%;
+  height: 16em;
+  background-image: url(/img/bg2.jpg);
+  background-position-y: -4px;
+}
+
+/* override songkick widget */
+
+.widget {
+  margin-left: -30px;
+}
+
+.widget img {
+  display: none;
+}
+
+.powered {
+  display: none;
+}
+
+body.medium {
+  margin: 0;
+}
+
+/* inputs */
+
+form {
+  padding: 1em;
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  padding: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1220px) {
+
+  input[type=email] {
+    max-width: 16em;
+  }
+
+  input[type=submit] {
+    max-width: 6em;
+  }
+
+}
+
+
+
+
