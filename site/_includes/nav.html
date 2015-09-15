@@ -10,9 +10,13 @@
   <!-- </ul> -->
 
 <ul>
-  {% for page in site.pages %}
-  {% if page.title %}
-  <li><a class="" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-  {% endif %}
+
+  {% assign sorted_pages = (site.pages | sort: 'title') %}
+
+  {% for page in sorted_pages reversed  %}
+    {% if page.title %}
+    <li><a class="" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+    {% endif %}
   {% endfor %}
+
 </ul>
