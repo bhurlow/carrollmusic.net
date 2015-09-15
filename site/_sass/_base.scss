@@ -93,6 +93,16 @@ a {
 
 p {
   font-size: 0.95rem;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.about p {
+  box-sizing: border-box;
+  width: 50%;
+  // float: left;
+  // padding-right: $spacing-unit;
+  padding-top: $spacing-unit * 2;
+  padding-right: 2rem;
+  margin-bottom: 0;
 }
 
