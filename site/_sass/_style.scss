@@ -37,16 +37,6 @@ body {
   }
 }
 
-  // .trigger {
-  //   clear: both;
-  //   display: none;
-  // }
-
-  // &:hover .trigger {
-  //   display: block;
-  //   padding-bottom: 5px;
-  // }
-
 .clickable {
   background-color: $brand-color;
   display: inline-block;
@@ -55,15 +45,24 @@ body {
   cursor: pointer;
   font-size: 0.6rem;
   letter-spacing: 2px;
-  background: url(/img/bg.jpg);
   text-transform: uppercase;
   font-weight: bold;
+  width: 8rem;
 }
 
 .clickable:hover {
   text-decoration: none;
   color: white;
   opacity: 0.9;
+}
+
+.pin {
+
+  @include mq($on-palm) {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 header {
