@@ -2,6 +2,15 @@
 $(slider)
 
 var posY = 0;
+var sliding = true;
+
+window.addEventListener('focus', function() {
+  sliding = true;
+});
+
+window.addEventListener('blur', function() {
+  sliding = false;
+});
 
 function slider() {
 
@@ -16,6 +25,8 @@ function slider() {
 }
 
 function slide() {
-  posY += 50
-  $('#banner').css('background-position-y', '-' + posY + 'px') 
+  if (sliding) {
+    posY += 50
+    $('#banner').css('background-position-y', '-' + posY + 'px') 
+  }
 }
