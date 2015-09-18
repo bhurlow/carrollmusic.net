@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Press
-permalink: /Press/
+permalink: /press/
 ---
 
 #### kinds words about carroll
