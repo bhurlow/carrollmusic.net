@@ -1,8 +1,8 @@
 # Site settings
 title: carrollmusic.net
-mgmt_email: haley@saltymgmt.com
-booking_email: brandon@shotwellbooking.com
-press_email: debbie@girlie.com
+mgmt_email: booking@carrollmusic.net
+booking_email: booking@carrollmusic.net
+press_email: kelly@wolfievibespublicity.com
 description: > # this means to ignore newlines until "baseurl:"
   Four piece psych pop outfit making every color of wave
 baseurl: "" # the subpath of your site, e.g. /blog/
