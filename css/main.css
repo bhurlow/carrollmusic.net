@@ -10,6 +10,8 @@ body {
 
 #jumbo {
   position: relative;
+  max-height: 42rem;
+  overflow: hidden;
 }
 
 #stage {

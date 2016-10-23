@@ -4,7 +4,7 @@ mgmt_email: booking@carrollmusic.net
 booking_email: booking@carrollmusic.net
 press_email: kelly@wolfievibespublicity.com
 description: > # this means to ignore newlines until "baseurl:"
-  Four piece psych pop outfit making every color of wave
+  psych pop 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://carrollmusic.net" # the base hostname & protocol for your site
 
