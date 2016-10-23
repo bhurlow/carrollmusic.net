@@ -18,7 +18,7 @@ body {
 
 #overtext {
   position: absolute;
-  top: 4rem;
+  bottom: 2rem;
   color: white;
   line-height: 1rem;
 }
