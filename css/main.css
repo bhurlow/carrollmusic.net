@@ -1,0 +1,25 @@
+
+body {
+  color: grey;
+}
+
+.menu-icon svg {
+  width: 1.5rem;
+  height: 2rem;
+}
+
+#jumbo {
+  position: relative;
+}
+
+#stage {
+  position: absolute;
+}
+
+#overtext {
+  position: absolute;
+  top: 4rem;
+  color: white;
+  line-height: 1rem;
+}
+
