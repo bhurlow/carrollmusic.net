@@ -1,10 +1,15 @@
 
+function rand(min, max) {
+  return Math.random() * (max - min) + min;
+}
 
 function randomCoords() {
   var w = $('#stage').width()
   var h = $('#stage').height()
-  let x = Math.floor(Math.random() * (w + 1)) - 50
-  let y = Math.floor(Math.random() * (h + 1)) - 50
+
+  let x = rand(10, w - 120)
+  let y = rand(10, h - 120)
+
   return [x, y]
 }
 
@@ -28,10 +33,16 @@ function addSvg(path) {
     var svg = res.children[0]
     var coords = randomCoords()
 
+    var wrap  = document.createElementNS("http://www.w3.org/2000/svg", "g");
     var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
     var trs = 'translate(' + coords[0] + ',' + coords[1] + ')'
-
     g.setAttribute('transform', trs)
+
+
+
+    wrap.setAttribute('transform', 'scale(2, 2)')
+    wrap.appendChild(g)
+
 
     var p = svg.querySelector('path')
 
@@ -42,7 +53,8 @@ function addSvg(path) {
       p.style.fill = 'none'
       p.style.stroke = randColor()
     }
-    p.transform = "translate(50,80)" 
+
+    p.setAttribute('transform', 'scale(0.5, 0.5)')
 
     g.appendChild(p)
     stage.append(g)
@@ -53,6 +65,10 @@ function addSvg(path) {
 
 $(window).ready(function() {
   var names = []
+  // for (x = 1; x <= 1; x++) {
+  //   var path = '/img/lp2_art/' + x + '.svg'
+  //   addSvg(path)
+  // }
   for (x = 1; x <= 7; x++) {
     var path = '/img/lp2_art/' + x + '.svg'
     addSvg(path)
