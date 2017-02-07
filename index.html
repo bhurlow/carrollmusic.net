@@ -2,26 +2,52 @@
 layout: default
 ---
 
-<div class="w-60 ba center">
-  {% include shapes.html %}
-  <h1 class="">Carroll</h1>
-  <div id="">
-    <!-- <img src="/img/lp2_art/wide1.jpg" alt=""> -->
-    <div class="lh-copy" id="overtext">
-      <p class="">New Album: "As Far As Gardens Go"</p>
-      <p class="">Out Worldwide on November 11th, 2016</p>
+<div class="w-60 center sans-serif">
+
+  <div>
+    {% include shapes.html %}
+  </div>
+
+  <h1 class="ma0 f1 lh-copy">Carroll</h1>
+
+  <div class="lh-copy" id="overtext">
+    <p class="b navy white pt4 pb4">New Album: "As Far As Gardens Go" out now</p>
+  </div>
+
+  {% capture releases %}{% include releases.md %}{% endcapture %}
+  {{ releases | markdownify }}
+
+  <div class="">
+    <a class="bg-orange pa2 white link" 
+       target="_blank" 
+       href="https://itunes.apple.com/us/album/carroll/id1012670078" class="clickable"> Self Titled (2016) </a>
+    <a target="_blank" href="https://open.spotify.com/artist/6MVgYAqn153Y25pD4iJ0qP" class="clickable"> stream CARROLL on spotify </a>
+  </div>
+
+  <div class="pt4 pb2 w-100">
+    <div class="list pa0 f6">
+     <h4 class="ttu tracked">Upcoming Shows</h4>
+      <ul class="list pa0 lh-copy">
+        <li> - 2/9 Philadelphia, PA Bad Bad Hats / Carroll / Pilkington at MilkBoy </li>
+        <li> - 2/12 Brooklyn, NY Bad Bad Hats @ Baby's All Right in Brooklyn, NY </li>
+      </ul>
     </div>
   </div>
+  
+
+  <div class="measure lh-copy f6">
+   <h4 class="ttu tracked">About Carroll</h4>
+    {% capture bio %}{% include bio.md %}{% endcapture %}
+    {{ bio | markdownify }}
+  </div>
+
+  {% include footer.html %}
 
   <!-- <div class="fl w-100 pa3 h6"> -->
   <!--   <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/267469934&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
   <!-- </div> -->
 
   <!-- <div id="tumblr_images"></div> -->
-  <div class="pin">
-    <a target="_blank" href="https://itunes.apple.com/us/album/carroll/id1012670078" class="clickable"> get CARROLL on iTunes </a>
-    <a target="_blank" href="https://open.spotify.com/artist/6MVgYAqn153Y25pD4iJ0qP" class="clickable"> stream CARROLL on spotify </a>
-  </div>
 
   <!-- <ul class="post-list"> -->
   <!--   {% for post in site.posts %} -->
