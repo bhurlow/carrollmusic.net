@@ -1,100 +1,16 @@
----
-layout: default
----
-
-<div class="pa3 w-60-ns center sans-serif">
-
-  <div>
-    {% include shapes.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carroll</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="sans-serif">
+  <div class="w-33 center tc">
+    <img class="w5" src="name.png" alt="">
+    <h4 class="pink">new record // 2020 // shattered orb </h4>
+    <img src="melt.png" width=500 alt="">
   </div>
-
-  <!-- <h1 class="ma0 f1 lh-copy">Carroll</h1> -->
-  <img class="w4" src="/img/carroll_script_type.png" alt="">
-
-  <div class="lh-copy pb2" id="overtext">
-    <p class="navy white f3"><span class="i n blue"> <a class="link blue i underline-hover" href="https://carroll.bandcamp.com/"> As Far As Gardens Go </a> </span> out now</p>
-  </div>
-
-  <div class="">
-    <div class="list pb4 f6">
-      <h4 class="ttu tracked">Upcoming Shows</h4>
-      <ul class="list pa0 lh-copy">
-        <li class="pv2">
-          2019 Shows in the Works: Stay Tuned 😜
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="w-100 fl pb4">
-    <div class="">
-      <ul class="list lh-copy pa0 f6">
-        <li> <span>mgmt: </span> <a class="link blue hover-green" href="mailto:{{ site.mgmt_email }}">{{ site.mgmt_email }}</a></li>
-        <li><span>booking: </span> <a class="link blue hover-green" href="mailto:{{ site.booking_email }}">{{ site.booking_email }}</a></li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="pb4 cf">
-
-    <div class="w-50-ns fl">
-      <p class="f6 lh-copy">As Far as Gardens Go - 2016</p>
-      <img class="w4 h4" src="/img/carroll_lp2_cover.png" alt="">
-      <div>
-        <a target="_blank" class="f6 pv1 link blue hover-green" href="https://itun.es/us/1xLdgb">iTunes</a>
-        |
-        <a target="_blank" class="f6 pv1 link blue hover-green" href="https://open.spotify.com/album/3QH8XaMr2pM4I4JIk7B2K3">Spotify</a>
-      </div>
-    </div>
-
-    <div class="w-50-ns fl">
-      <p class="f6 lh-copy">Self Titled - 2015</p>
-      <img class="w4 h4" src="/img/carroll_lp1_cover.png" alt="">
-      <div>
-        <a target="_blank" class="f6 pv1 link blue hover-green" href="https://itun.es/us/-5bx8">iTunes</a>
-        |
-        <a target="_blank" class="f6 pv1 link blue hover-green" href="https://open.spotify.com/album/0uz1nT6VEPiph2XLugtZux">Spotify</a>
-      </div>
-    </div>
-  
-  </div>
-
-
-  <!-- <div class=""> -->
-  <!--   <a class="bg-orange pa2 white link" --> 
-  <!--      target="_blank" --> 
-  <!--      href="https://itunes.apple.com/us/album/carroll/id1012670078" class="clickable"> Self Titled (2016) </a> -->
-  <!--   <a target="_blank" href="https://open.spotify.com/artist/6MVgYAqn153Y25pD4iJ0qP" class="clickable"> stream CARROLL on spotify </a> -->
-  <!-- </div> -->
-
-
-  <div class="measure lh-copy f6">
-   <h4 class="ttu tracked">About Carroll</h4>
-    {% capture bio %}{% include bio.md %}{% endcapture %}
-    {{ bio | markdownify }}
-  </div>
-
-  {% include footer.html %}
-
-
-  <!-- <div class="fl w-100 pa3 h6"> -->
-  <!--   <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/267469934&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
-  <!-- </div> -->
-
-  <!-- <div id="tumblr_images"></div> -->
-
-  <!-- <ul class="post-list"> -->
-  <!--   {% for post in site.posts %} -->
-  <!--     <li> -->
-  <!--       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-
-  <!--       <h2> -->
-  <!--         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
-  <!--       </h2> -->
-  <!--     </li> -->
-  <!--   {% endfor %} -->
-  <!-- </ul> -->
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
-</div>
+</body>
+</html>
